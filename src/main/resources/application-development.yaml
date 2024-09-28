@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+  application:
+    name: itemify-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/application-dev
+    username: application
+    password: application
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
